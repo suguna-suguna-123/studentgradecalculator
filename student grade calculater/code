@@ -1,0 +1,52 @@
+def calculate_grade(mark):
+    if mark >= 90:
+        return "A+"
+    elif mark >= 80:
+        return "A"
+    elif mark >= 70:
+        return "B"
+    elif mark >= 60:
+        return "C"
+    elif mark >= 50:
+        return "D"
+    else:
+        return "F"
+
+
+def main():
+    print("====================================")
+    print("       STUDENT GRADE CALCULATOR")
+    print("====================================")
+
+    name = input("Enter student name: ")
+
+    subjects = int(input("Enter number of subjects: "))
+
+    total = 0
+    marks = []
+
+    for i in range(subjects):
+        mark = float(input(f"Enter marks for Subject {i + 1}: "))
+
+        while mark < 0 or mark > 100:
+            print("Invalid marks! Enter marks between 0 and 100.")
+            mark = float(input(f"Enter marks for Subject {i + 1}: "))
+
+        marks.append(mark)
+        total += mark
+
+    average = total / subjects
+    grade = calculate_grade(average)
+
+    print("\n====================================")
+    print("          STUDENT RESULT")
+    print("====================================")
+    print("Student Name :", name)
+    print("Total Marks  :", total)
+    print("Average      :", round(average, 2))
+    print("Grade        :", grade)
+    print("====================================")
+
+
+if __name__ == "__main__":
+    main()

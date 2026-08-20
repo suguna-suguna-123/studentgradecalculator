@@ -1,0 +1,27 @@
+import unittest
+from student_grade_calculator import calculate_grade
+
+
+class TestStudentGradeCalculator(unittest.TestCase):
+
+    def test_a_plus_grade(self):
+        self.assertEqual(calculate_grade(95), "A+")
+
+    def test_a_grade(self):
+        self.assertEqual(calculate_grade(85), "A")
+
+    def test_b_grade(self):
+        self.assertEqual(calculate_grade(75), "B")
+
+    def test_c_grade(self):
+        self.assertEqual(calculate_grade(65), "C")
+
+    def test_d_grade(self):
+        self.assertEqual(calculate_grade(55), "D")
+
+    def test_f_grade(self):
+        self.assertEqual(calculate_grade(40), "F")
+
+
+if __name__ == "__main__":
+    unittest.main()

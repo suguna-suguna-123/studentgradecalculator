@@ -1,0 +1,18 @@
+====================================
+       STUDENT GRADE CALCULATOR
+====================================
+Enter student name: Amrutha
+Enter number of subjects: 5
+Enter marks for Subject 1: 95
+Enter marks for Subject 2: 88
+Enter marks for Subject 3: 76
+Enter marks for Subject 4: 91
+Enter marks for Subject 5: 84
+
+====================================
+          STUDENT RESULT
+====================================
+Student Name : Amrutha
+Total Marks  : 434.0
+Average      : 86.8
+Grade        : A
